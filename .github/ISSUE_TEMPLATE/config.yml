@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: A vulnerability, or a way past the gate
+    url: https://github.com/doublegate-io/.github/blob/main/SECURITY.md
+    about: Email — do not open a public issue. A hole in the trust model is the most valuable report we can get.
+  - name: Deployment, pricing, or "would this work for us"
+    url: mailto:eugene.korniichuk@gmail.com?subject=doublegate%20%E2%80%94%20deployment%20and%20pricing
+    about: One address, answered by the person who maintains the project.
+  - name: Read the argument first
+    url: https://doublegate-io.github.io
+    about: What it does, what it costs, and the published limits — including the findings that work against us.
