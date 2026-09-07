@@ -145,6 +145,7 @@ Want in earlier? [Ask](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20�
 - **An objection, a correction, or a citation we got wrong** — [open an issue](https://github.com/doublegate-io/doublegate-io.github.io/issues).
   Corrections to the evidence page are the most useful thing anyone can send us.
 - **A vulnerability** — see [SECURITY.md](https://github.com/doublegate-io/.github/blob/main/SECURITY.md). Do not open a public issue.
+- **Anything else** — [SUPPORT.md](https://github.com/doublegate-io/.github/blob/main/SUPPORT.md) says where each kind of question goes, and what to expect from a project maintained by one person.
 
 <div align="center">
 
