@@ -96,7 +96,7 @@ each step out adds an authority, not a feature flag.
 
 | Scope | Boundary it serves | What you're paying for | Price |
 |---|---|---|---|
-| **Solo** | one machine, no redistribution | nothing — it's the whole engine | free, open source |
+| **Solo** | one machine, no redistribution | nothing — it's the whole engine; you are the reviewer, and your sign-off is recorded as yours, never as your agent's | free, open source |
 | **Team** | one gate's authority | the shared gate and a review queue someone owns | per active contributor |
 | **Organization** | a *second independent* authority | the double gate: independent second review, read scopes, real deletion, exportable audit trail | annual |
 | **Commons** | your gate signs, the commons gate countersigns | nothing — it points outward | free |

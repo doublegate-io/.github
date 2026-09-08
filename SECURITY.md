@@ -7,7 +7,8 @@ with `security` in the subject. Do not open a public issue.**
 
 doublegate's most valuable attack surface is still on paper: the trust model the code is
 being built against. This policy covers the design and the site today, and each release
-joins it as it ships — release 2 in Q2 2027:
+joins it as it ships — release 2 in Q2 2027, per the
+[public roadmap](https://doublegate-io.github.io/for-engineers.html#try):
 
 | In scope | |
 |---|---|
@@ -41,7 +42,7 @@ Concretely, we would rather hear about these before we build them:
   the reason survives the person who found it.
 - Credit you, unless you would rather we didn't.
 
-## What we will not do
+## Two things to know before you write
 
 - Pay a bounty. There is no budget; saying so is more useful than a vague hint that there
   might be.

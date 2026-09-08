@@ -1,0 +1,16 @@
+name: gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+      # check.py is stdlib-only; ubuntu-latest ships python3.
+      # no phase language, one site-owned date, links resolve, one contact address
+      - name: gate checks
+        run: python3 check.py
