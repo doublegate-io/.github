@@ -106,8 +106,8 @@ Solo ships first; Team and Organization follow, sequenced on the
 
 ## Where the project stands
 
-The design package is complete and internally consistent: **94 design documents**,
-**26 dated decision records**, requirements, architecture, component contracts and
+The design package is complete and internally consistent: **100 design documents**,
+**27 dated decision records**, requirements, architecture, component contracts and
 cited research — every load-bearing claim traceable to a primary source on the
 [evidence page](https://doublegate-io.github.io/evidence.html). Engineering begins against
 the public roadmap.
