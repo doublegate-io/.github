@@ -1,8 +1,8 @@
 # Support
 
-doublegate is in **design phase**. There is no package to install, no service to sign into
-and no version to be running, so most of the usual support questions don't apply yet. The
-ones that do are answered below, with the fastest route for each.
+doublegate is in design phase: the design package and the site are the product right now,
+so the support that matters is about the argument and the evidence. The routes below take
+each kind of question to where it gets answered fastest.
 
 ## Start with the argument
 

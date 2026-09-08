@@ -5,14 +5,14 @@
 **Email [eugene.korniichuk@gmail.com](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20security)
 with `security` in the subject. Do not open a public issue.**
 
-There is no code yet — doublegate is in design phase — so today this policy covers two
-real things and one that does not exist:
+doublegate is in design phase, and the most valuable attack surface is on paper. This
+policy covers the two things that exist today, and extends to each release as it ships:
 
 | In scope | |
 |---|---|
 | **The design itself** | a hole in the trust model is the most valuable report we can receive right now. If the gate can be bypassed on paper, it can be bypassed in code |
 | **The site** | `doublegate-io.github.io` — anything that lets someone else change what visitors read |
-| Not yet applicable | there is no published package, no service, and no deployment to attack |
+| **Releases** | the published package, service and deployments — covered from the first release |
 
 Expect a reply within a week. We are one person, so that is a realistic commitment rather
 than a generous one.

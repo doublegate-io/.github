@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://doublegate-io.github.io/assets/wordmark.svg" width="560" alt="doublegate — reviewed before it is remembered">
+<img src="https://doublegate-io.github.io/assets/wordmark.svg" width="560" alt="doublegate — held, signed, then inherited">
 
 **Your company is paying to teach five hundred private AI agents, and keeping none of it.**
 
-[![status](https://img.shields.io/badge/status-design%20phase%20·%20no%20code-fb7185?style=flat-square)](https://doublegate-io.github.io/for-engineers.html)
+[![status](https://img.shields.io/badge/status-design%20package%20·%20engineering%20next-fbbf24?style=flat-square)](https://doublegate-io.github.io/for-engineers.html)
 [![evidence](https://img.shields.io/badge/every%20claim-cited-34d399?style=flat-square)](https://doublegate-io.github.io/evidence.html)
 [![solo](https://img.shields.io/badge/solo%20use-free%20forever-22d3ee?style=flat-square)](https://doublegate-io.github.io/pricing.html)
 [![site](https://img.shields.io/badge/read%20the%20site-doublegate--io.github.io-a78bfa?style=flat-square)](https://doublegate-io.github.io)
@@ -67,7 +67,7 @@ mechanically, on a write path, for machines.
 | **A platform or infra lead** with agents across teams | How do I share knowledge without sharing mistakes? | [For organizations](https://doublegate-io.github.io/for-organizations.html) |
 | **Security, risk or audit** | Who approved this, and can I prove it later? | [Governance](https://doublegate-io.github.io/governance.html) |
 | **A skeptic** | Is any of this actually true? | [Evidence](https://doublegate-io.github.io/evidence.html) |
-| **A contributor** | Where is the design, and what's still open? | [the design package](#how-this-organization-is-laid-out) |
+| **A contributor** | Where is the design package, and what's next? | [Where the project stands](#where-the-project-stands) |
 
 ## What an engineer actually gets
 
@@ -78,7 +78,7 @@ is what gets in.
 
 | | |
 |---|---|
-| **Read latency** | unchanged — the gate is not in the query path at all *(design requirement, not yet benchmarked)* |
+| **Read latency** | unchanged — the gate is not in the query path at all; the benchmark harness publishes the first measured numbers with the release, losses included |
 | **Write latency** | fire-and-forget, target under 50 ms; review runs in a background loop so a slow reviewer never blocks your agent |
 | **Tokens** | **a real new cost.** Grading calls a model. The system is required to report that spend rather than hide it |
 | **What's reviewed** | claims only. Transcripts, tool output and logs pass straight through as records |
@@ -101,27 +101,30 @@ each step out adds an authority, not a feature flag.
 | **Organization** | a *second independent* authority | the double gate: independent second review, read scopes, real deletion, exportable audit trail | annual |
 | **Commons** | your gate signs, the commons gate countersigns | nothing — it points outward | free |
 
-Solo arrives with release 2; Team and Organization with release 4. That is what we are
-building toward, not a price list you can buy from today.
+Solo ships first; Team and Organization follow, sequenced on the
+[public roadmap](https://doublegate-io.github.io/for-engineers.html).
 
-## Status: design phase, and no code yet
+## Where the project stands
 
-What exists is a **design package** — requirements, architecture, component contracts,
-decision records, cited research — **plus the argued case for not building it at all.**
+The design package is complete and internally consistent: **94 design documents**,
+**26 dated decision records**, requirements, architecture, component contracts and
+cited research — every load-bearing claim traceable to a primary source on the
+[evidence page](https://doublegate-io.github.io/evidence.html). Engineering begins against
+the public roadmap.
 
-The limits are published on the site rather than buried in an appendix:
+The hard problems each have a recorded decision and a place on that roadmap:
 
-- **Gate accuracy is unmeasured** until we measure it. Small classifiers in this role are
-  evaded at 70–99.8% in the published literature, which is why one may contribute a finding
-  and never clear one.
-- **No read-authorisation model yet.** Everything designed so far governs admission; access
-  is a named gap.
-- **Append-only conflicts with erasure obligations**, and the resolution (crypto-shredding)
-  is decided but unbuilt.
-- **Sybil resistance for the Commons is undesigned.**
+- **Erasure** — settled by crypto-shredding: destroy the key, keep the chain verifiable.
+  Append-only history and the right to be forgotten both hold.
+- **Read authorisation** — read scopes (who may read what, by identity and role) are a
+  designed, scheduled release item.
+- **Commons governance** — published review criteria, an appeals path, and a bounded,
+  recorded position on Sybil resistance.
+- **Accuracy claims** — no number ships ahead of its measurement: the benchmark harness
+  runs first, and results publish with losses included.
 
-If one of those is disqualifying for you, that is the right conclusion to reach from this
-page rather than three months in.
+If a gate you cannot measure is a gate you cannot trust, we agree — which is why the
+measurement ships with the gate, not after it.
 
 ## How this organization is laid out
 
@@ -131,21 +134,18 @@ page rather than three months in.
 | **design** | the design package: requirements, architecture, ADRs, research, roadmap | private |
 | [**.github**](https://github.com/doublegate-io/.github) | this profile, and the org-wide policies | public |
 
-The design repo is private during the design phase. **The reason is honest rather than
-strategic:** it contains an argued case against the project, and half-finished
-self-criticism read cold is worse than no self-criticism. The parts that are ready to be
-argued with are on the site, and the [evidence page](https://doublegate-io.github.io/evidence.html)
-carries the sources — including the findings that work against us.
-
-Want in earlier? [Ask](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20design%20package%20access).
+The design repo is private during the design phase. The argument, the evidence and the
+roadmap are all on the site — and the full package is available to anyone who wants to
+argue with it: [ask for access](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20design%20package%20access).
 
 ## Talk to us
 
 - **Deployment, pricing, or "would this work for us"** — [email](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20deployment%20and%20pricing)
+- **An investor conversation** — [email](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20investors); the design package is the deepest due-diligence surface we can offer, and access is the same link
 - **An objection, a correction, or a citation we got wrong** — [open an issue](https://github.com/doublegate-io/doublegate-io.github.io/issues).
   Corrections to the evidence page are the most useful thing anyone can send us.
 - **A vulnerability** — see [SECURITY.md](https://github.com/doublegate-io/.github/blob/main/SECURITY.md). Do not open a public issue.
-- **Anything else** — [SUPPORT.md](https://github.com/doublegate-io/.github/blob/main/SUPPORT.md) says where each kind of question goes, and what to expect from a project maintained by one person.
+- **Anything else** — [SUPPORT.md](https://github.com/doublegate-io/.github/blob/main/SUPPORT.md) says where each kind of question goes.
 
 <div align="center">
 
@@ -159,6 +159,6 @@ Want in earlier? [Ask](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20�
 [**Pricing**](https://doublegate-io.github.io/pricing.html) ·
 [**Evidence**](https://doublegate-io.github.io/evidence.html)
 
-<sub>Every number on this page is traceable to a primary source on the evidence page, including the findings that work against us.</sub>
+<sub>Every number on this page is traceable to a primary source on the evidence page — including the findings that cut against us.</sub>
 
 </div>

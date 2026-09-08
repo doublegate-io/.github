@@ -1,8 +1,8 @@
 # Contributing
 
-doublegate is in **design phase**: no code, no package, nothing to install. That changes
-what a useful contribution looks like, so this file says what actually helps rather than
-copying a workflow for a codebase that doesn't exist yet.
+doublegate is in design phase, and the design package is the product right now. That
+changes what a useful contribution looks like — this file says what actually helps at
+this stage, rather than copying a workflow built for a later one.
 
 ## The most useful thing you can send
 
