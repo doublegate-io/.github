@@ -5,8 +5,9 @@
 **Email [eugene.korniichuk@gmail.com](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20security)
 with `security` in the subject. Do not open a public issue.**
 
-doublegate is in design phase, and the most valuable attack surface is on paper. This
-policy covers the two things that exist today, and extends to each release as it ships:
+doublegate's most valuable attack surface is still on paper: the trust model the code is
+being built against. This policy covers the design and the site today, and each release
+joins it as it ships — release 2 in Q2 2027:
 
 | In scope | |
 |---|---|
@@ -17,12 +18,12 @@ policy covers the two things that exist today, and extends to each release as it
 Expect a reply within a week. We are one person, so that is a realistic commitment rather
 than a generous one.
 
-## Design-phase reports we specifically want
+## The reports we most want
 
 The threat model this project exists to address is **content written to manipulate the
 system that reviews it.** If you can describe a way for an artifact to reach a readable
-state without an independent reviewer signing it, that is the report we most want, and it
-does not require any code to exist.
+state without an independent reviewer signing it, that is the report we most want — and
+a hole in the design is worth more than a hole in the code, because it is cheaper to fix.
 
 Concretely, we would rather hear about these before we build them:
 

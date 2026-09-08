@@ -1,8 +1,8 @@
 # Support
 
-doublegate is in design phase: the design package and the site are the product right now,
-so the support that matters is about the argument and the evidence. The routes below take
-each kind of question to where it gets answered fastest.
+doublegate's design package is complete and release 2 — the first you can run — is
+Q2 2027. Until it ships, the support that matters is about the argument and the evidence.
+The routes below take each kind of question to where it gets answered fastest.
 
 ## Start with the argument
 
@@ -31,8 +31,8 @@ One person maintains this. That has two consequences worth stating plainly rathe
 hiding behind a response-time promise:
 
 - **There is no SLA.** Email and issues are read; a considered answer may take a few days.
-- **A well-argued objection gets answered before a feature request.** The design package is
-  the product right now, so anything that changes it is the priority.
+- **A well-argued objection gets answered before a feature request.** Releases are built
+  against the design package, so anything that changes it is the priority.
 
 If a question turns out to be one that other people will ask too, the answer becomes a page
 on the site rather than a reply that only you can see.

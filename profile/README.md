@@ -130,12 +130,14 @@ measurement ships with the gate, not after it.
 
 | Repo | What it is | |
 |---|---|---|
-| [**doublegate-io.github.io**](https://github.com/doublegate-io/doublegate-io.github.io) | the public site — static HTML, no build dependencies beyond Python 3 | public |
+| **doublegate** | the implementation — shared library and the two services, built against the design package; opens with release 2 | private |
 | **design** | the design package: requirements, architecture, ADRs, research, roadmap | private |
+| **roadmap** | the engineering tracker, generated from the design package — one issue per feature row | private |
+| [**doublegate-io.github.io**](https://github.com/doublegate-io/doublegate-io.github.io) | the public site — static HTML, no build dependencies beyond Python 3 | public |
 | [**.github**](https://github.com/doublegate-io/.github) | this profile, and the org-wide policies | public |
 
-The design repo is private during the design phase. The argument, the evidence and the
-roadmap are all on the site — and the full package is available to anyone who wants to
+The design, code and tracker repos are private until release 2. The argument, the evidence
+and the roadmap are all on the site — and the full package is available to anyone who wants to
 argue with it: [ask for access](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20design%20package%20access).
 
 ## Talk to us

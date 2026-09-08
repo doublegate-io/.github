@@ -1,8 +1,10 @@
 # Contributing
 
-doublegate is in design phase, and the design package is the product right now. That
-changes what a useful contribution looks like — this file says what actually helps at
-this stage, rather than copying a workflow built for a later one.
+doublegate's design package is complete and the first releases are being built against
+it; release 2 — the one you can point an agent at — is Q2 2027. Until then the package
+and its evidence are what there is to argue with, and that changes what a useful
+contribution looks like. This file says what actually helps now, rather than copying a
+workflow built for a later stage.
 
 ## The most useful thing you can send
 
