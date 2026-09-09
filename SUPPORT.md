@@ -1,8 +1,8 @@
 # Support
 
-doublegate's design package is complete and release 2 — the first you can run — is
-Q2 2027. Until it ships, the support that matters is about the argument and the evidence.
-The routes below take each kind of question to where it gets answered fastest.
+doublegate's two gates run end to end, and release 2 — the first you can run yourself —
+is Q2 2027. Until the code opens, the support that matters is about the argument and the
+evidence. The routes below take each kind of question to where it gets answered fastest.
 
 ## Start with the argument
 

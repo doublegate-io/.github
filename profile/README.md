@@ -4,20 +4,28 @@
 
 **Your company is paying to teach five hundred private AI agents, and keeping none of it.**
 
-[![status](https://img.shields.io/badge/status-design%20package%20·%20engineering%20next-fbbf24?style=flat-square)](https://doublegate-io.github.io/for-engineers.html)
-[![evidence](https://img.shields.io/badge/every%20claim-cited-34d399?style=flat-square)](https://doublegate-io.github.io/evidence.html)
+[![status](https://img.shields.io/badge/both%20gates-running%20end%20to%20end-34d399?style=flat-square)](https://doublegate-io.github.io/how-it-works.html)
+[![evidence](https://img.shields.io/badge/every%20claim-cited-a78bfa?style=flat-square)](https://doublegate-io.github.io/evidence.html)
 [![solo](https://img.shields.io/badge/solo%20use-free%20forever-22d3ee?style=flat-square)](https://doublegate-io.github.io/pricing.html)
-[![site](https://img.shields.io/badge/read%20the%20site-doublegate--io.github.io-a78bfa?style=flat-square)](https://doublegate-io.github.io)
+[![site](https://img.shields.io/badge/read%20the%20site-doublegate--io.github.io-fbbf24?style=flat-square)](https://doublegate-io.github.io)
 
 </div>
 
 ---
 
-## What we are building
+## Everyone contributes. Everyone gets a teammate back.
 
-**Admission control for agent memory.** Nothing an agent writes becomes readable until a
-reviewer that did not write it has signed it. Two gates — one on your machine, one for
-your organization — hence the name.
+Each person on your team teaches their agent how the work is actually done — a naming
+convention, a deployment gotcha, the way round a broken API. Today that knowledge sits on
+one laptop, or gets copied around with nobody vouching for it.
+
+doublegate is **admission control for agent memory**. Nothing an agent writes becomes
+readable until a reviewer that did not write it has signed it. What survives that review
+reaches every colleague's agent — carrying who taught it and who approved it. A new hire's
+first day starts with an agent that already knows how your team works, and a departure
+takes nothing with it.
+
+Two gates — one on your machine, one for your organization — hence the name.
 
 Every other memory system treats a write as a fact. We treat it as a **claim**.
 
@@ -25,10 +33,8 @@ Every other memory system treats a write as a fact. We treat it as a **claim**.
 
 Two problems, and the second is why the obvious fix doesn't work.
 
-**The knowledge dies in one session.** Every engineer corrects their agent daily — a naming
-convention, a deployment gotcha, a way round a broken API. That correction lands in one
-person's history and stops there. A field experiment across **66 firms** found individual
-AI time savings with **no shift in the quantity or composition of work** at the
+**The knowledge dies in one session.** A field experiment across **66 firms** found
+individual AI time savings with **no shift in the quantity or composition of work** at the
 organizational level. The gains stay single-player.
 
 **Pooling it pools the mistakes at the same speed.** Across **fourteen memory providers**
@@ -67,7 +73,7 @@ mechanically, on a write path, for machines.
 | **A platform or infra lead** with agents across teams | How do I share knowledge without sharing mistakes? | [For organizations](https://doublegate-io.github.io/for-organizations.html) |
 | **Security, risk or audit** | Who approved this, and can I prove it later? | [Governance](https://doublegate-io.github.io/governance.html) |
 | **A skeptic** | Is any of this actually true? | [Evidence](https://doublegate-io.github.io/evidence.html) |
-| **A contributor** | Where is the design package, and what's next? | [Where the project stands](#where-the-project-stands) |
+| **A contributor** | How is the work laid out? | [Where the project stands](#where-the-project-stands) |
 
 ## What an engineer actually gets
 
@@ -82,6 +88,12 @@ is what gets in.
 | **Write latency** | fire-and-forget, target under 50 ms; review runs in a background loop so a slow reviewer never blocks your agent |
 | **Tokens** | **a real new cost.** Grading calls a model. The system is required to report that spend rather than hide it |
 | **What's reviewed** | claims only. Transcripts, tool output and logs pass straight through as records |
+| **Runtime** | Python 3.11+, one dependency in the core. It runs as a sidecar next to the agent, and the plugin tier keeps working when the gate is down |
+
+Your agent gains four tools — `remember`, `recall`, `status`, `why` — and gains no way to
+approve its own writing. **There is no promote, sign or delete tool on any tier:** the
+thing being gated does not operate the gate. Identity comes off the connection, so an
+agent cannot claim to be someone else.
 
 Four properties every artifact carries, because they share one write path and one journal:
 **audited** (a signed verdict says who approved it and why), **traceable** (every belief
@@ -106,13 +118,18 @@ Solo ships first; Team and Organization follow, sequenced on the
 
 ## Where the project stands
 
-The design package is complete and internally consistent: **100 design documents**,
-**27 dated decision records**, requirements, architecture, component contracts and
-cited research — every load-bearing claim traceable to a primary source on the
-[evidence page](https://doublegate-io.github.io/evidence.html). Engineering begins against
-the public roadmap.
+**The loop closes.** A memory written by an agent is held, scanned, graded by an identity
+that did not write it, signed, submitted to the organization gate, independently re-graded
+there and countersigned — and the whole path runs on one box through the shipped binaries
+of both packages, in continuous integration, on every commit. **715 tests** cover it.
 
-The hard problems each have a recorded decision and a place on that roadmap:
+Behind that: **133 documents in the design package**, 55 of them dated decision records,
+plus requirements, architecture, component contracts and cited research — every
+load-bearing claim traceable to a primary source on the
+[evidence page](https://doublegate-io.github.io/evidence.html).
+Where code and design disagree, the design wins and the code is the bug.
+
+The hard problems each have a recorded decision and a place on the roadmap:
 
 - **Erasure** — settled by crypto-shredding: destroy the key, keep the chain verifiable.
   Append-only history and the right to be forgotten both hold.
@@ -130,15 +147,17 @@ measurement ships with the gate, not after it.
 
 | Repo | What it is | |
 |---|---|---|
-| **doublegate** | the implementation — shared library and the two services, built against the design package; opens with release 2 | private |
-| **design** | the design package: requirements, architecture, ADRs, research, roadmap | private |
+| **client-gate** | the gate on your machine: the shared library and the agent-facing service that holds, scans, grades and signs | private until release |
+| **organization-gate** | the second authority: the keyed service that re-grades what client gates submit and countersigns it | private until release |
+| **crawler-gate** | the internet, fetched under the operator's terms, recorded, and proposed — never trusted | private until release |
+| **design** | the design package: requirements, architecture, decision records, research, roadmap | private |
 | **roadmap** | the engineering tracker, generated from the design package — one issue per feature row | private |
 | [**doublegate-io.github.io**](https://github.com/doublegate-io/doublegate-io.github.io) | the public site — static HTML, no build dependencies beyond Python 3 | public |
 | [**.github**](https://github.com/doublegate-io/.github) | this profile, and the org-wide policies | public |
 
-The design, code and tracker repos are private until release 2. The argument, the evidence
-and the roadmap are all on the site — and the full package is available to anyone who wants to
-argue with it: [ask for access](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20design%20package%20access).
+The code opens with the first release. The argument, the evidence and the roadmap are all
+on the site — and the full design package goes to anyone who wants to argue with it:
+[ask for access](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20design%20package%20access).
 
 ## Talk to us
 

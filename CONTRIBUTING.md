@@ -1,10 +1,9 @@
 # Contributing
 
-doublegate's design package is complete and the first releases are being built against
-it; release 2 — the one you can point an agent at — is Q2 2027. Until then the package
-and its evidence are what there is to argue with, and that changes what a useful
-contribution looks like. This file says what actually helps now, rather than copying a
-workflow built for a later stage.
+doublegate's two gates run end to end, and release 2 — the one you can point an agent at —
+is Q2 2027. Until the code opens, the design package and its evidence are what there is to
+argue with, and that changes what a useful contribution looks like. This file says what
+actually helps now, rather than copying a workflow built for a later stage.
 
 ## The most useful thing you can send
 

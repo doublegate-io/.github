@@ -5,14 +5,16 @@
 **Email [eugene.korniichuk@gmail.com](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20security)
 with `security` in the subject. Do not open a public issue.**
 
-doublegate's most valuable attack surface is still on paper: the trust model the code is
-being built against. This policy covers the design and the site today, and each release
-joins it as it ships — release 2 in Q2 2027, per the
+doublegate's whole purpose is a boundary, so a report that the boundary can be crossed is
+the most valuable thing we receive. Both gates run end to end today, and the design they
+are built against is as much in scope as the code — release 2 in Q2 2027 joins this policy
+as it ships, per the
 [public roadmap](https://doublegate-io.github.io/for-engineers.html#try):
 
 | In scope | |
 |---|---|
-| **The design itself** | a hole in the trust model is the most valuable report we can receive right now. If the gate can be bypassed on paper, it can be bypassed in code |
+| **The design** | a hole in the trust model is worth more than a hole in the code, because it is cheaper to fix and it fixes every implementation of it |
+| **The gates** | the client gate and the organization gate, their admission path, their signing and their keyed surface |
 | **The site** | `doublegate-io.github.io` — anything that lets someone else change what visitors read |
 | **Releases** | the published package, service and deployments — covered from the first release |
 
@@ -42,10 +44,10 @@ Concretely, we would rather hear about these before we build them:
   the reason survives the person who found it.
 - Credit you, unless you would rather we didn't.
 
-## Two things to know before you write
+## Two things we will not do
 
-- Pay a bounty. There is no budget; saying so is more useful than a vague hint that there
-  might be.
-- Quietly change a design document to make a reported hole disappear. Corrections are
+- **Pay a bounty.** There is no budget; saying so is more useful than a vague hint that
+  there might be.
+- **Quietly change a design document to make a reported hole disappear.** Corrections are
   appended, dated, and the original wording stays — a decision record whose history has
   been edited is not a record.
