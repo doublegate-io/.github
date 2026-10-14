@@ -7,7 +7,7 @@ actually helps now, rather than copying a workflow built for a later stage.
 
 ## The most useful thing you can send
 
-**A correction to the evidence.** The [evidence page](https://doublegate-io.github.io/evidence.html)
+**A correction to the evidence.** The [evidence page](https://about.doublegate.io/evidence.html)
 carries every load-bearing claim with a primary source, including the findings that work
 against the project. If a number is stale, a citation doesn't say what we claim it says, or
 a source has been superseded — that is the highest-value issue anyone can open, and it goes
@@ -24,7 +24,7 @@ killing the project; adding to it is a contribution, not an attack.
 | A wrong number, a bad citation, a broken link | [issue on the site repo](https://github.com/doublegate-io/doublegate-io.github.io/issues) |
 | An argument against the design | same — an issue, stated as a claim we must answer |
 | A hole in the trust model | [SECURITY.md](SECURITY.md) — email, not a public issue |
-| "Would this work for my org" | [email](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20deployment%20and%20pricing) |
+| "Would this work for my org" | [email](mailto:eugene@doublegate.io?subject=doublegate%20—%20deployment%20and%20pricing) |
 | A pull request to the site | fine — read the site repo's `AGENTS.md` first, and run `python3 check.py` |
 
 ## If you send a pull request to the site

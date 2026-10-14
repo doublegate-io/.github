@@ -7,9 +7,9 @@ evidence. The routes below take each kind of question to where it gets answered 
 ## Start with the argument
 
 Almost every question about what doublegate does is answered on the
-[site](https://doublegate-io.github.io) — what it does, what it costs to run, and the
+[site](https://about.doublegate.io) — what it does, what it costs to run, and the
 published limits, including the findings that work against the project. The
-[evidence page](https://doublegate-io.github.io/evidence.html) carries every load-bearing
+[evidence page](https://about.doublegate.io/evidence.html) carries every load-bearing
 claim with a primary source. If the answer you need should be there and isn't, that gap is
 itself worth reporting.
 
@@ -17,7 +17,7 @@ itself worth reporting.
 
 | Your question | Where it goes |
 |---|---|
-| "Would this work for my organization?" | [email](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20%E2%80%94%20deployment%20and%20pricing) — answered by the person who maintains the project |
+| "Would this work for my organization?" | [email](mailto:eugene@doublegate.io?subject=doublegate%20%E2%80%94%20deployment%20and%20pricing) — answered by the person who maintains the project |
 | "When can I run it?" | The roadmap is public on the site; dates move, and the site is the version that's current |
 | "This number is wrong / this citation doesn't say that" | [Open an issue](https://github.com/doublegate-io/doublegate-io.github.io/issues) with the `evidence` label — the highest-value report we take |
 | "The design breaks under X" | [Open an issue](https://github.com/doublegate-io/doublegate-io.github.io/issues) with the `objection` label, stated as a claim we have to answer |

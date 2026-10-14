@@ -22,7 +22,7 @@ Issues, pull requests, commit messages and email in this organization.
 
 ## Enforcement
 
-Report to [eugene.korniichuk@gmail.com](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20conduct).
+Report to [eugene@doublegate.io](mailto:eugene@doublegate.io?subject=doublegate%20—%20conduct).
 Reports are read by the person who maintains the project and nobody else.
 
 Responses are, in order: a request to stop, deletion of the content, and a block. There is

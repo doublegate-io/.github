@@ -2,14 +2,14 @@
 
 ## Reporting a vulnerability
 
-**Email [eugene.korniichuk@gmail.com](mailto:eugene.korniichuk@gmail.com?subject=doublegate%20—%20security)
+**Email [eugene@doublegate.io](mailto:eugene@doublegate.io?subject=doublegate%20—%20security)
 with `security` in the subject. Do not open a public issue.**
 
 doublegate's whole purpose is a boundary, so a report that the boundary can be crossed is
 the most valuable thing we receive. Both gates run end to end today, and the design they
 are built against is as much in scope as the code — release 2 in Q2 2027 joins this policy
 as it ships, per the
-[public roadmap](https://doublegate-io.github.io/for-engineers.html#try):
+[public roadmap](https://about.doublegate.io/for-engineers.html#try):
 
 | In scope | |
 |---|---|

@@ -42,8 +42,8 @@ FILES = [
     ROOT / "CODE_OF_CONDUCT.md",
     *sorted((ROOT / ".github" / "ISSUE_TEMPLATE").glob("*.md")),
 ]
-SITE = "https://doublegate-io.github.io"
-CONTACT = "eugene.korniichuk@gmail.com"
+SITE = "https://about.doublegate.io"
+CONTACT = "eugene@doublegate.io"
 
 failures: list[str] = []
 
